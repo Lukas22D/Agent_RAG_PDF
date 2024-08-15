@@ -14,7 +14,7 @@ load_dotenv()
 
 def create_vectorstore(chunks):
     """ Cria um vectorstore a partir dos chunks de texto, utilizando a Embedding API da Cohere e o FAISS """
-    embeddings = CohereEmbeddings(cohere_api_key=os.getenv('COHERE_API_KEY'))
+    embeddings = CohereEmbeddings(cohere_api_key=os.getenv('COHERE_API_KEY'), model= 'embed-multilingual-v3.0')
     vectorstore = FAISS.from_texts(texts= chunks, embedding=embeddings)
 
     return vectorstore

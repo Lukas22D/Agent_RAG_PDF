@@ -1,4 +1,4 @@
-# Converse com Seus Arquivos de Texto
+# Agente RAF PDf
 
 Este projeto permite que você faça perguntas diretamente para seus arquivos PDF. Ele utiliza o Streamlit para a interface de usuário e a Langchain para processar e interpretar os textos. A seguir, você encontrará detalhes sobre a estrutura do código e as funções principais utilizadas no projeto.
 
